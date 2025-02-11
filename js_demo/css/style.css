@@ -1,0 +1,24 @@
+body {
+    background-color: #ffeaec;
+    color: rgb(62, 46, 40);
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.05em;
+    animation:
+        typing 6s steps(50, end),
+        blink-caret .8s step-end infinite;
+}
+
+@keyframes typing {
+    from { width:0; }
+    to { width:100%; }
+}
+
+.headings {
+    text-align: center;
+    margin: 20px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Vera | JS Demo</title>
+    <link rel = "stylesheet" href = "css/style.css">
+    <script type = "text/javascript" src = "js/script.js"></script>
+</head>
+
+<body>
+    <div class = "headings">
+        <h1 class = "typewriter">javascript</h1>
+        <h2>web period e</h2>
+        <h3>hollingshead</h3>
+    </div>
+
+    <h2>onclick events</h2>
+    <p><a href = "http://www.google.com" target = "_blank" onclick = "alert('warning!\nyou are navigating away from this website\ndo you still wish to proceed?')">google</a></p>
+
+    <h2>math</h2>
+    <p>7 + 7</p>
+    <button onclick = "document.getElementById('add').innerHTML = 7 + 7">click for answer</button>
+    <p id = "add"></p>
+
+    <h2>display date and time</h2>
+    <button onclick = "document.getElementById('date').innerHTML = Date()">click for date and time</button>
+    <p id = "date"></p>
+
+    <h2>change text</h2>
+    <button onclick = "document.getElementById('change-text').innerHTML = 'you did it!'">click here</button>
+    <p id = "change-text">this will change</p>
+
+    <h2>functions</h2>
+    <p>build a function to add text to the page</p>
+    <button onclick = "pFun()">click here to run a function</button>
+    <p id = "p-fun"></p>
+
+    <h2>return user data</h2>
+    <button onclick = "askName()">click here to enter your name</button>
+    <p id = "ask-name"></p>
+
+    <h2>ask questions</h2>
+    <button onclick = "askQuestion()">click here for a question</button>
+    <p id = "question"></p>
+
+    <script>
+        //alert('hi!\nwelcome to my web page');
+
+        function askName() {
+            var nameReturn = document.getElementById('ask-name');
+            var name = prompt('enter name', 'here');
+            if (name == '') {
+                alert('try again');
+            } else {
+                nameReturn.innerHTML = 'hello ' + name + '! nice to meet you';
+            }
+        }
+
+        function pFun() {
+            var p = document.getElementById('p-fun');
+            p.innerHTML = 'you just ran a function';
+            p.style.color = 'rgb(148, 108, 88)';
+            p.style.fontSize = '30px';
+            p.style.textAlign = 'center';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(134, 154, 122);
+}
+
+.nav {
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+    border: 2px rgb(90, 108, 79); 
+    border-radius: 10px; 
+    border-style: solid; 
+    padding: 5px 10px; 
+    display: inline-block;
+}
+
+.span1 {
+    color: black;
+    font-size: xx-large;
+    font-family: monospace;
+}
+
+.container {
+    text-align:center;
+    margin:20px;
+    margin-right:50px;
+    margin-left:50px;
+}
+
+.close_lines {
+    line-height:1.2
+}
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.05em;
+    animation:
+        typing 5s steps(50, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width:0; }
+    to { width:100%; }
+}
+
+.kodamagif {
+    filter: brightness(1.5) saturate(1.1) sepia(0.3);
+}
+
+.princess_wolves {
+    filter: saturate(1.6) sepia(0.5);
+}
+
+.centeredlist {
+    display: inline-block;
+    text-align: center;
+  }
