@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(255, 233, 235);
+    color: rgb(134, 88, 71);
+    text-align: center;
+    margin: 0 310px;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.garland {
+    margin: 0 -310px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block; 
+    margin-right: 15px; 
+}
+
+.nav li a {
+    display: block; 
+    text-decoration: none; 
+    color: rgb(134, 88, 71);
+    padding: 3px; 
+    border: 3px solid rgb(134, 88, 71); 
+    border-radius: 12px; 
+    font-size: 16px;
+    text-align: center; 
+    min-width: 100px; 
+    box-sizing: border-box; 
+    transition: 0.3s, color 0.3s, border 0.3s; 
+}
+
+.nav ul li a:hover {
+    background-color: #fcd3d8;
+    transform: scale(1.1);
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'ham is cute';
+}
+
+.textbox {
+    background-color: rgba(255, 246, 247, 0.938); 
+    padding: 10px 30px;
+    box-shadow: 2px 2px 5px rgba(92, 54, 56, 0.329);
+    border-radius: 50px; 
+    display: inline-block;
+    margin-bottom: 30px
+}
+
+.button {
+    color: rgb(134, 88, 71); 
+    border: 2px solid rgb(134, 88, 71);
+    border-radius: 12px;
+    background-color: rgb(255, 233, 235);
+    padding: 3px 6px;
+    cursor: pointer; 
+    display: inline-block;
+    margin-right: 4px; 
+  }
+  
+  .reveal {
+    display: none;
+    margin-top: 15px; 
+  }  
+
+.links {
+    color: rgb(134, 88, 71); 
+}
+
+.links:hover {
+    color: rgb(223, 133, 145);
+}
+
+@font-face {
+    font-family: 'ham is cute';
+    src: url('fonts/hamiscute.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+.image-container img {
+    width: 200px; /* Adjust as needed */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
